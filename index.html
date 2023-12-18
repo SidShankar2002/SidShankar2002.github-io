@@ -1,0 +1,74 @@
+<!-- This file is the index.html file, which includes 
+the various buttons (such as the generate letters,
+restart game, and the submit word button). This one also contained
+images that I used to make a scrabble board and have a playable board 
+on. It was quite interesting to do, but it worked and it was fun to do! 
+Name: Sid Shankar
+E-Mail - siddarth_shankar@student.uml.edu
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrabble</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+  <!-- Single row of the Scrabble board -->
+  <div id="game-board" class="droppable">
+    <!-- Set the background image for the droppable target -->
+    <!-- Add an extra class 'target' to the droppable images -->
+    <img src="Scrabble_Tiles/blank_space.png" alt="Game Board Background" class="droppable target" data-col="1" data-row="1">
+    <img src="Scrabble_Tiles/double_letter.png" alt="Double Word" class="droppable target" data-col="2" data-row="1">
+    <img src="Scrabble_Tiles/blank_space.png" alt="Game Board Background" class="droppable target" data-col="3" data-row="1">
+    <img src="Scrabble_Tiles/blank_space.png" alt="Game Board Background" class="droppable target" data-col="4" data-row="1">
+    <img src="Scrabble_Tiles/double_letter.png" alt="Double Word" class="droppable target" data-col="5" data-row="1">
+    <img src="Scrabble_Tiles/blank_space.png" alt="Game Board Background" class="droppable target" data-col="6" data-row="1">
+    <img src="Scrabble_Tiles/double_letter.png" alt="Double Word" class="droppable target" data-col="7" data-row="1">
+    <img src="Scrabble_Tiles/blank_space.png" alt="Game Board Background" class="droppable target" data-col="8" data-row="1">
+  </div>
+
+  <!-- Display the current score -->
+  <p id="currentScore">Current Score: 0</p>
+  <p id="totalScore">Total Score: 0</p>
+  <p id="lettersRemaining">Remaining Letters: 88</p>
+  <p id="gameOver"></p>
+  <div id="tile1" class="draggable">
+    <!-- Tile 1 - Dynamic content will be added by JavaScript -->
+  </div>
+  <div id="tile2" class="draggable">
+    <!-- Tile 2 - Dynamic content will be added by JavaScript -->
+  </div>
+  <div id="tile3" class="draggable">
+    <!-- Tile 3 - Dynamic content will be added by JavaScript -->
+  </div>
+  <div id="tile4" class="draggable">
+    <!-- Tile 4 - Dynamic content will be added by JavaScript -->
+  </div>
+  <div id="tile5" class="draggable">
+    <!-- Tile 5 - Dynamic content will be added by JavaScript -->
+  </div>
+  <div id="tile6" class="draggable">
+    <!-- Tile 6 - Dynamic content will be added by JavaScript -->
+  </div>
+  <div id="tile7" class="draggable">
+    <!-- Tile 7 - Dynamic content will be added by JavaScript -->
+  </div>
+
+  <div id="rack">
+    <!-- Your draggable tiles will be appended here -->
+  </div>
+  <button id="generateLetters">Generate New Letters</button>
+  <!-- Add the "Submit Word" button -->
+  <button id="submitWord">Submit Word</button>
+  <button id="restartGame">Restart Game</button>
+  <script src="scrabble.js"></script>
+</body>
+</html>

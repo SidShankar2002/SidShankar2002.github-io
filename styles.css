@@ -1,0 +1,29 @@
+/* Add this CSS rule to make tiles appear side by side */
+.draggable {
+    display: inline-block;
+    margin-right: 10px; /* Adjust margin as needed */
+  }
+
+  /* Set the width and height for the images inside .draggable */
+  .draggable img {
+    width: 75px; /* Set the width to 75px */
+    height: 75px; /* Set the height to 75px */
+  }
+
+  .droppable img {
+    width: 85px;
+    height: 85px;
+    top: 0;
+    left: 0;
+  }
+
+  /* Add this CSS to your existing styles */
+#rack .draggable {
+display: inline-block;
+margin-right: 5px; /* Adjust the margin as needed */
+}
+
+/* Add this CSS to your existing styles */
+#rack {
+white-space: nowrap;
+}
